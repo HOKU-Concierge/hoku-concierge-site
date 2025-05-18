@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="keywords" content="Hokkaido travel, family travel Japan, bilingual concierge, Sapporo itinerary, local support Japan, Japan travel planning">
+  <meta property="og:title" content="HOKU Concierge | Personalized Hokkaido Travel Support">
+  <meta property="og:description" content="Craft your perfect Hokkaido journey with local bilingual support, custom itineraries, and family-friendly service.">
+  <meta property="og:image" content="https://hoku-concierge.com/hoku_hero_og.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hoku-concierge.com">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOKU Concierge | Craft Your Dream Hokkaido Journey</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+  <meta name="description" content="Experience Hokkaido like never before with bespoke concierge service: custom itineraries, free airport pickup, insider tips, and 24/7 support.">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Merriweather', serif; background:#faf9f5; color:#333; line-height:1.6; overflow-x: hidden; }
+    a { color:#c9a46b; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    img { max-width:100%; display:block; }
+    /* Navigation */
+    nav { position:sticky; top:0; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px); box-shadow:0 2px 4px rgba(0,0,0,0.1); z-index:100; }
+    nav ul { display:flex; justify-content:center; gap:2rem; list-style:none; padding:1rem; }
+    nav ul li { font-weight:600; }
+    /* Hero */
+    header {
+      /* Lightened background with brighter overlay */
+      background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('hoku_hero_1920x900.jpg') center 70%/cover no-repeat;
+      filter: brightness(1.1);
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30vh;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    header h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 3rem;
+      /* Gradient text effect */
+      background: linear-gradient(90deg, #FFEEE4, #FFD1A1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      /* Brightened text color for readability */
+      color: #FFF8ED;
+      max-width: 600px;
+      margin-bottom: 3rem;
+    }
+    .btn-primary {
+      /* Gradient button for prominence */
+      background: linear-gradient(90deg, #c9a46b, #b88d4b);
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+      margin-top: 1rem;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(90deg, #b88d4b, #c9a46b);
+      transform: translateY(-2px);
+    }
+    .btn-primary:hover {
+      background:#b88d4b;
+    }
+    .btn-primary:hover { background:#b88d4b; }
+    /* Sections */
+    .section { padding:4rem 1rem; max-width:1000px; margin:auto; }
+    .section h2 { font-family:'Open Sans', sans-serif; font-size:2rem; margin-bottom:1rem; color:#2c2c2c; position:relative; }
+    .section h2::after { content:''; width:50px; height:4px; background:#c9a46b; position:absolute; bottom:-8px; left:0; }
+    .section p { margin-bottom:1.5rem; }
+    .section ul { list-style:disc inside; margin-bottom:1.5rem; }
+    /* Gallery */
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin-top:2rem; }
+    /* Testimonials */
+    .testimonials { background:#fffef9; padding:4rem 1rem; }
+    .testimonial { margin-bottom:2rem; font-style:italic; }
+    .testimonial cite { display:block; text-align:right; font-style:normal; margin-top:0.5rem; font-weight:600; }
+    /* Pricing Table */
+    .pricing-table { width:100%; border-collapse:collapse; margin:2rem 0; }
+    .pricing-table th,.pricing-table td { border:1px solid #ddd; padding:1rem; text-align:center; }
+    .pricing-table th { background:#f0efeb; font-family:'Open Sans',sans-serif; }
+    /* Contact */
+    form { display:grid; gap:1rem; }
+    input,textarea { width:100%; padding:0.75rem; border:1px solid #ccc; border-radius:8px; }
+    /* Footer */
+    footer { text-align:center; padding:2rem 1rem; background:#2c2c2c; color:#fff; font-size:0.9rem; }
+    /* Responsive */
+    @media(max-width:768px){
+  header h1 { font-size: 2rem; }
+  nav ul { flex-wrap: wrap; gap: 1rem; font-size: 0.9rem; }
+  .section h2 { font-size: 1.5rem; text-align: center; }
+  .btn-primary { padding: 0.75rem 1.5rem; font-size: 1rem; }
+  .gallery img { height: auto; }
+  .pricing-table th, .pricing-table td { font-size: 0.9rem; padding: 0.75rem; }
+  form input, form textarea { font-size: 1rem; }
+}
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#cancellation">Cancellation</a></li>
+      
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#terms">Terms</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+    </ul>
+  </nav>
+
+  <header>
+  <img src="HOKU6.png" alt="HOKU Concierge Logo" style="width:100%; height:auto; display:block;">
+  
+</header>
+
+  <section class="section" style="text-align: center; background: #fffef9; padding: 6rem 1rem 2rem 1rem;" data-aos="fade-up">
+  <div style="max-width: 700px; margin: auto;">
+
+  <h1 style="font-family: 'Open Sans', sans-serif; font-size: 2.25rem; color: #2c2c2c; margin-bottom: 1rem;">Experience Hokkaido Like Never Before</h1>
+  <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; color: #555;">Custom-made journeys, warm local support, and unforgettable moments—designed just for you and your family.</p>
+  <a href="#contact" class="btn-primary" style="margin-top: 2rem; display: inline-block;">Start Planning</a>
+<p style="margin-top:1rem; font-size:0.95rem; color:#444;">🎁 Book now and receive a free PDF guide: “Top 10 Family-Friendly Cafes in Hokkaido”</p>
+  </div>
+</div>
+
+
+</header>
+<style>
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+</style>
+
+  
+<div style="max-width: 720px; margin: 0 auto 3rem auto; text-align: center;">
+  <h2 style="font-size: 1.8rem; margin-bottom: 1rem; color: #2c2c2c;">Why Choose HOKU Concierge?</h2>
+  <p style="font-size: 1.1rem; color: #444;">
+    We’re not just planners—we’re your trusted companions in Hokkaido. Our bilingual local team supports families, long-term travelers, and adventure seekers with authentic experiences, seamless communication, and heartfelt service.
+  </p>
+</div>
+ <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+  <img src="009(down).jpg" alt="Kurashina Family in Guam" style="width:100%; max-width:600px; border-radius:12px; margin-bottom:1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+
+  <p style="font-size:1.05rem; max-width:700px; margin-bottom:1rem;">
+    We are the Kurashina family — based in Sapporo, Hokkaido. With three lively boys aged 8, 6, and 2, we understand the joys and challenges of family travel. Our life in Hokkaido is filled with seasonal beauty, local traditions, and warm community.
+  </p>
+
+  <p style="font-size:1.05rem; max-width:700px;">
+    I’m Mami Kurashina. From age 19 to 24, I studied in Los Angeles and worked as a travel agency manager. After returning to Japan to raise my children, I wanted to share the Hokkaido I love with others. With my husband’s support, HOKU Concierge was born — a service that feels like having a friend in Japan.
+  </p>
+</div>
+
+</section>
+
+  <section class="section" id="services">
+  <h2>Our Services</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/4206/4206337.png" alt="24/7 Support Icon" style="width:100%; max-height:180px; object-fit:contain; margin-bottom: 1rem;">
+      <p>🟢 24/7 support via LINE & WhatsApp (replies after midnight JST are sent after 8:00 AM).</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/1973/1973962.png" alt="Transport Support Icon" style="width:100%; max-height:180px; object-fit:contain; margin-bottom: 1rem;">
+      <p>🧭 Arrangement of airport transfers, taxis, rental cars, or train travel upon request.</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/831/831276.png" alt="Local Guidance Icon" style="width:100%; max-height:180px; object-fit:contain; margin-bottom: 1rem;">
+      <p>📍 In-person guidance in the Sapporo area and up to the Niseko region (other areas on consultation).</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/4169/4169027.png" alt="Nature Experience Icon" style="width:100%; max-height:180px; object-fit:contain; margin-bottom: 1rem;">
+      <p>🌲 Nature-based experiences: farm visits, seasonal harvesting, and craft workshops for families.</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/702/702797.png" alt="Japanese Lantern Icon" style="width:100%; max-height:180px; object-fit:contain; margin-bottom: 1rem;">
+      <p>🎎 Introduction to local festivals and community events in Hokkaido.</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/2951/2951100.png" alt="Messaging Support Icon" style="width:100%; max-height:180px; object-fit:contain; margin-bottom: 1rem;">
+      <p>📩 Reservation and communication support via LINE/WhatsApp when English is not available.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trust">
+  <h2>Why Trust HOKU Concierge?</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+    <div style="background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Family-Owned" style="width:60px; margin-bottom:1rem;">
+      <h3>Family-Owned & Local</h3>
+      <p>Run by the Kurashina family in Sapporo, we know Hokkaido like home—and treat every guest like extended family.</p>
+    </div>
+    <div style="background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3063/3063827.png" alt="Bilingual Support" style="width:60px; margin-bottom:1rem;">
+      <h3>Bilingual Support</h3>
+      <p>English-Japanese support from start to finish. We’re fluent, friendly, and responsive across time zones.</p>
+    </div>
+    <div style="background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
+      <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Custom Travel" style="width:60px; margin-bottom:1rem;">
+      <h3>Tailored to You</h3>
+      <p>No one-size-fits-all plans. We craft each itinerary based on your family's needs, preferences, and pace.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="how-it-works">
+  <h2>How It Works</h2>
+  <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; color: #555;">
+    Planning your Hokkaido adventure with us is easy and personalized. Here’s what to expect:
+  </p>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+    <div style="background:#fff; padding:1.5rem; border-radius:12px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+      <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Step 1" style="width:50px; margin-bottom:1rem;">
+      <h3>1. Share Your Dream</h3>
+      <p>Tell us your travel hopes, family needs, and preferred dates via our form, LINE, or WhatsApp.</p>
+    </div>
+    <div style="background:#fff; padding:1.5rem; border-radius:12px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+      <img src="https://cdn-icons-png.flaticon.com/512/3304/3304563.png" alt="Step 2" style="width:50px; margin-bottom:1rem;">
+      <h3>2. Receive a Custom Plan</h3>
+      <p>Within 2–3 business days, we send a personalized itinerary tailored to your lifestyle and preferences.</p>
+    </div>
+    <div style="background:#fff; padding:1.5rem; border-radius:12px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+      <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Step 3" style="width:50px; margin-bottom:1rem;">
+      <h3>3. Confirm & Pay</h3>
+      <p>We adjust the plan as needed and confirm everything via secure PayPal payment.</p>
+    </div>
+    <div style="background:#fff; padding:1.5rem; border-radius:12px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+      <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Step 4" style="width:50px; margin-bottom:1rem;">
+      <h3>4. Enjoy Stress-Free Travel</h3>
+      <p>We stay connected throughout your trip to support with guidance, bookings, and real-time help.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="sample-plan">
+  <h2>Sample Itineraries (10-Day Stays)</h2>
+  <p style="margin-bottom: 2rem;">Here are two sample 10-day itineraries to inspire your Hokkaido journey. Travel times are carefully considered to ensure a relaxed, family-friendly experience.</p>
+
+  <h3 style="margin-top: 2rem; color: #c9a46b;">🌻 Summer Plan</h3>
+  <div style="display:grid; grid-template-columns:1fr; gap:1.5rem; margin-bottom:2rem;">
+    <div style="background:#fff; padding:1.5rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+      <ul>
+        <li><strong>Day 1:</strong> Arrive in Sapporo, orientation walk, local dinner</li>
+        <li><strong>Day 2:</strong> Explore Sapporo – parks, markets, sweets factory</li>
+        <li><strong>Day 3:</strong> Otaru day trip – canal, crafts, sushi</li>
+        <li><strong>Day 4:</strong> Maruyama hike, Hokkaido Shrine, Mt. Moiwa</li>
+        <li><strong>Day 5:</strong> Farm visit for fruit picking or nature crafts</li>
+        <li><strong>Day 6:</strong> Noboribetsu Onsen stay & Hell Valley</li>
+        <li><strong>Day 7:</strong> Lake Toya scenic trip, return to Sapporo</li>
+        <li><strong>Day 8:</strong> Furano & Biei flower fields, stay in Furano</li>
+        <li><strong>Day 9:</strong> Return to Sapporo, cooking class</li>
+        <li><strong>Day 10:</strong> Departure & airport transfer</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="color: #b88d4b;">❄️ Winter Plan</h3>
+  <div style="display:grid; grid-template-columns:1fr; gap:1.5rem;">
+    <div style="background:#fff; padding:1.5rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+      <ul>
+        <li><strong>Day 1:</strong> Arrive in Sapporo, warm welcome dinner</li>
+        <li><strong>Day 2:</strong> Snow play at Takino Snow World</li>
+        <li><strong>Day 3:</strong> Odori Park, Sapporo Beer Museum, Mt. Moiwa</li>
+        <li><strong>Day 4:</strong> Otaru winter day trip – canal, cafés, crafts</li>
+        <li><strong>Day 5:</strong> Asahiyama Zoo & penguin parade</li>
+        <li><strong>Day 6:</strong> Jozankei Onsen retreat with ryokan stay</li>
+        <li><strong>Day 7:</strong> Return to Sapporo, light shopping or museum</li>
+        <li><strong>Day 8:</strong> Ski or snow fun at Kiroro or Teine</li>
+        <li><strong>Day 9:</strong> Japanese calligraphy or sweets-making class</li>
+        <li><strong>Day 10:</strong> Departure & airport transfer</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin-top:1.5rem;"><em>Each plan is customizable based on your pace, season, and interests. We’ll help tailor the perfect route for your family.</em></p>
+</section>
+
+
+<section class="section" id="pricing">
+  <h2>Pricing</h2>
+  <p style="margin-bottom: 1.5rem;">We believe in transparent and simple pricing based on your length of stay:</p>
+  <div style="display: flex; flex-direction: column; gap: 1.5rem;" data-aos="fade-up" data-aos-delay="100">
+    <div style="background: #fff; padding: 2rem; border: 1px solid #eee; border-radius: 12px;">
+      <h3>Standard Concierge</h3>
+      <table class="pricing-table">
+        <thead>
+          <tr><th>Service</th><th>Included</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Custom itinerary creation</td><td>✔️</td></tr>
+          <tr><td>Booking & translation support</td><td>✔️</td></tr>
+          <tr><td>24/7 chat support</td><td>✔️</td></tr>
+          <tr><td>On-demand local coordination</td><td>✔️</td></tr>
+        </tbody>
+      </table>
+<p style="margin-top: 1rem; font-size: 0.95rem; color: #555;">
+  <strong>Note:</strong> HOKU Concierge is a travel-focused service. We do not provide interpretation or accompaniment for business, legal, or corporate-related purposes.
+</p>
+
+      <p><strong>USD 1,380</strong> – For stays up to 10 days<br>
+         <strong>USD 2,880</strong> – For stays up to 1 month<br>
+         <strong>Contact us for a custom quote</strong> – For stays over 1 month</p>
+    </div>
+    <div style="background: #fff; padding: 2rem; border: 1px solid #eee; border-radius: 12px;">
+      <h3>Activity Guide</h3>
+      <p>• On-site accompaniment and interpretation (by availability)</p>
+      <p><strong>USD 150/hour</strong></p>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:2rem;">
+    <a href="https://www.paypal.me/hokuconcierge" target="_blank" class="btn-primary" data-aos="zoom-in">💳 Pay via PayPal</a>
+  </div>
+</section>
+
+<section class="section" id="cancellation">
+  <h2>Cancellation Policy</h2>
+  <p>We understand that plans may change. Please review our cancellation terms below:</p>
+  <ul>
+    <li><strong>7 or more days before service start:</strong> Full refund (minus processing fees).</li>
+    <li><strong>3–6 days before service start:</strong> 50% refund.</li>
+    <li><strong>Less than 72 hours before service start:</strong> No refund available.</li>
+    <li>Custom plans involving third-party reservations (e.g. guides, accommodation) may have separate cancellation terms depending on the provider.</li>
+  </ul>
+  <p>We are happy to discuss date changes whenever possible.</p>
+</section>
+
+
+
+  
+  </section>
+
+  
+
+  
+<section class="testimonials section" id="testimonials" style="background:#f8f6f2; padding:4rem 1rem;">
+  <h2 style="text-align:center;">Testimonials</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; max-width:1000px; margin:2rem auto;">
+    <div style="background:#fff; padding:2rem; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.05);">
+      <p style="font-style:italic;">“HOKU Concierge made our trip seamless! We felt like VIPs.”</p>
+      <cite style="display:block; text-align:right; margin-top:1rem; font-style:normal; font-weight:600;">🇺🇸 Emily, USA<br><span style='font-weight:normal; font-size:0.9rem;'>Couple, early 30s</span></cite>
+    </div>
+    <div style="background:#fff; padding:2rem; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.05);">
+      <p style="font-style:italic;">“My kids loved the personalized activities. Highly recommended!”</p>
+      <cite style="display:block; text-align:right; margin-top:1rem; font-style:normal; font-weight:600;">🇦🇺 Marcus, Australia<br><span style='font-weight:normal; font-size:0.9rem;'>Family of 4, ages 7 & 9</span></cite>
+    </div>
+    <div style="background:#fff; padding:2rem; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.05);">
+      <p style="font-style:italic;">“Amazing local insights and flexible support. Five stars!”</p>
+      <cite style="display:block; text-align:right; margin-top:1rem; font-style:normal; font-weight:600;">🇬🇧 Sophie, UK<br><span style='font-weight:normal; font-size:0.9rem;'>Solo traveler, age 42</span></cite>
+    </div>
+  </div>
+</section>
+
+  
+<section class="section" id="faq">
+  <h2>FAQ</h2>
+  <div style="max-width: 800px; margin: auto;">
+    <p><strong>Q:</strong> Do you speak English?<br><strong>A:</strong> Yes, fluently and warmly. We're happy to support you in English throughout your journey.</p>
+
+    <p><strong>Q:</strong> Can you make bookings on my behalf?<br><strong>A:</strong> Absolutely. We assist with restaurant, activity, and local reservations—especially where English is not available.</p>
+
+    <p><strong>Q:</strong> Do you provide transportation yourself?<br><strong>A:</strong> No, but we help arrange trusted transport such as taxis, airport shuttles, or rental cars.</p>
+
+    <p><strong>Q:</strong> How do I get from the airport to Sapporo?<br><strong>A:</strong></p>
+    <ul style="margin-left: 1.5rem;">
+      <li>🚆 <strong>JR Rapid Airport Train</strong> – ~40 min to Sapporo Station (~¥1,150 per person)</li>
+      <li>🚌 <strong>Airport Limousine Bus</strong> – direct to major hotels, ~1 hour (~¥1,100 per person)</li>
+      <li>🚖 <strong>Taxi or Private Car</strong> – most convenient, ~50 min (~¥15,000–40,000 depending on group size)</li>
+    </ul>
+    <p>We'll recommend and book the best option based on your situation.</p>
+
+    <p><strong>Q:</strong> Are you a travel agency?<br><strong>A:</strong> We are a concierge service, not a licensed travel agency. Our role is to assist, recommend, and guide with personal care and attention.</p>
+
+    <p><strong>Q:</strong> Can I use this service for business support or legal interpretation?<br><strong>A:</strong> No. HOKU Concierge is strictly for travel and lifestyle assistance. We do not accompany or translate for business, legal, or corporate purposes.</p>
+
+    <p><strong>Q:</strong> Is this service suitable for long stays or working holidays?<br><strong>A:</strong> Yes! We love supporting long-term travelers and families relocating short-term. We can help you settle in with practical, local help.</p>
+  </div>
+</section>
+
+
+  <section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center; max-width:600px; margin:auto; margin-bottom:2rem;">We'd love to hear from you. Share your vision and let's begin crafting your Hokkaido experience.</p>
+  <form action="https://formsubmit.co/saitomami1022@gmail.com" method="POST" style="max-width:600px; margin:auto;">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Tell us your needs..." required></textarea>
+    <button class="btn-primary" type="submit">Send Message</button>
+  </form>
+  <p style="text-align:center; margin-top:1.5rem;">
+    💬 <a href="https://line.me/R/ti/p/@raijamaica" target="_blank">LINE Chat</a> &nbsp; | &nbsp;
+    💬 <a href="https://wa.me/+818040409739" target="_blank">WhatsApp Chat</a>
+  </p>
+</section>
+
+  <footer>
+    <p>&copy; 2025 HOKU Concierge. All rights reserved.</p>
+      <li>Before confirming your reservation, we will send you a PDF copy of our Terms and Conditions. You will be asked to agree by checking a confirmation box during your booking.</li>
+    <li>The PDF includes our cancellation policy, liability disclaimers, and service boundaries. Please read carefully before proceeding.</li>
+    <li>Clients are responsible for payments directly to third-party vendors such as accommodations, transport providers, or activity organizers unless otherwise agreed in writing.</li>
+    <li>HOKU Concierge acts as an intermediary and shall not be held liable for delays, accidents, injuries, or losses caused by third-party providers.</li>
+    <li>Clients must confirm bookings directly unless otherwise specified. We only assist with coordination and communication.</li>
+    <li>Services are provided as concierge assistance and do not constitute legal, immigration, or real estate representation.</li>
+    <li>All bookings made on your behalf will be confirmed in writing and are subject to third-party terms.</li>
+    <li>We reserve the right to decline requests that are beyond our scope or unreasonable in nature.</li>
+  </ul>
+</section>
+<section class="section" id="privacy">
+  <h2>Privacy Policy</h2>
+  <p>Your privacy is important to us. We only use your information to respond to your inquiries or provide services. We will never sell or share your personal data without consent.</p>
+</section>
+<section class="section" id="contact-info">
+  <h2>Need Help?</h2>
+  <p>If you have any questions or need further clarification, please feel free to contact us directly via LINE, WhatsApp, or the contact form above.</p>
+</section>
+<footer>
+<script>AOS.init({ duration: 1000, once: true });</script>
+<div style="position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 9999;">
+  <a href="https://page.line.me/mami102286" target="_blank" style="background:#06C755; color:white; padding:10px 14px; border-radius:50px; font-size:14px; box-shadow:0 2px 6px rgba(0,0,0,0.2); text-align:center;">LINE</a>
+  <a href="https://wa.me/+818040409739" target="_blank" style="background:#25D366; color:white; padding:10px 14px; border-radius:50px; font-size:14px; box-shadow:0 2px 6px rgba(0,0,0,0.2); text-align:center;">WhatsApp</a>
+</div>
+
+<!-- Floating Contact Buttons -->
+<div style="position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 9999;">
+  <a href="https://line.me/R/ti/p/@raijamaica" target="_blank" style="background:#06C755; color:white; padding:10px 14px; border-radius:50px; font-size:14px; box-shadow:0 2px 6px rgba(0,0,0,0.2); text-align:center;">💬 LINE</a>
+  <a href="https://wa.me/+818040409739" target="_blank" style="background:#25D366; color:white; padding:10px 14px; border-radius:50px; font-size:14px; box-shadow:0 2px 6px rgba(0,0,0,0.2); text-align:center;">💬 WhatsApp</a>
+</div>
+
+</body>
+</html>
